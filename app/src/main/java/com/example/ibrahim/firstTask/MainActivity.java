@@ -49,14 +49,10 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Document doc = Jsoup.connect("http://unreal3112.16mb.com/wb1913_a.html").get();
                     Elements fullWords = doc.select("p");
-//                    Elements fullType = doc.select("i");
-//                    Elements fullMeaning = doc.select("p");
 
 
                     for (int i = 0; i < fullWords.size(); i++) {
                         Element word = fullWords.get(i);
-//                        Element type = fullType.get(i);
-//                        Element meaning = fullMeaning.get(i);
                         builder.append("\n").append(word.text()).append("\n");
                     }
 
