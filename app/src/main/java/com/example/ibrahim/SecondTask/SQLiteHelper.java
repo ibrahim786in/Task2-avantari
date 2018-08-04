@@ -21,7 +21,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase database) {
-        String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_DICTIONARY + " (" + COL_ALPHABETS + " VARCHAR)";
+        String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_DICTIONARY + " (" + COL_ALPHABETS + " TEXT)";
         database.execSQL(CREATE_TABLE);
     }
 
