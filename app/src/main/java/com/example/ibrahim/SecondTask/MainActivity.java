@@ -110,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                         boolean isInserted = sqLiteHelper.insertData(alphabets);
                     }
 
-
                 } catch (IOException e) {
                     builder.append("Error : ").append(e.getMessage()).append("\n");
                 }
