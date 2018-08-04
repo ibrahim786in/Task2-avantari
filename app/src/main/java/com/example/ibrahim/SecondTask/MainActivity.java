@@ -102,28 +102,13 @@ public class MainActivity extends AppCompatActivity {
 
                         Elements fullWords = doc.select("p");
 
-
                         for (int i = 0; i < fullWords.size(); i++) {
                             Element word = fullWords.get(i);
                             builder.append("\n").append(word.text()).append("\n");
                             alphabets = word.text();
-
                         }
                         boolean isInserted = sqLiteHelper.insertData(alphabets);
-
-
                     }
-//                    doc = Jsoup.connect("http://unreal3112.16mb.com/wb1913_a.html").get();
-//                    Elements fullWords = doc.select("p");
-//
-//
-//                    for (int i = 0; i < fullWords.size(); i++) {
-//                        Element word = fullWords.get(i);
-//                        builder.append("\n").append(word.text()).append("\n");
-//                        alphabets = word.text();
-//
-//                    }
-//                    boolean isInserted = sqLiteHelper.insertData(alphabets);
 
 
                 } catch (IOException e) {
