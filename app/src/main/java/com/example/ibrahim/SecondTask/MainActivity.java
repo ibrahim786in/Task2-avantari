@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sync = (Button) findViewById(R.id.sync);
-        showData = (Button) findViewById(R.id.showData);
+//        showData = (Button) findViewById(R.id.showData);
         dictData = (TextView) findViewById(R.id.dictData);
         sync.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,22 +53,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        showData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Cursor result = sqLiteHelper.getAllData();
-                if (result != null) {
-                    result.moveToFirst();
-                    do {
-
-                        String str_Dict_Words = result.getString(result.getColumnIndex("alphabets"));
-
-                        dictData.setText("Data From SQLite :\n " + str_Dict_Words + "");
-
-                    } while (result.moveToNext());
-                }
-            }
-        });
+//        showData.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Cursor result = sqLiteHelper.getAllData();
+//                if (result != null) {
+//                    result.moveToFirst();
+//                    do {
+//
+//                        String str_Dict_Words = result.getString(result.getColumnIndex("alphabets"));
+//
+//                        dictData.setText("Data From SQLite :\n " + str_Dict_Words + "");
+//
+//                    } while (result.moveToNext());
+//                }
+//            }
+//        });
 
     }
 

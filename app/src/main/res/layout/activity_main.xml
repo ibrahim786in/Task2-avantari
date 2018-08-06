@@ -11,19 +11,21 @@
         android:id="@+id/sync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_gravity="center"
         android:padding="20dp"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:text="Sync Now"
         android:textSize="20sp" />
 
 
-    <Button
-        android:id="@+id/showData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Show dictionary " />
+    <!--<Button-->
+        <!--android:id="@+id/showData"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="Show dictionary " />-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,6 +34,8 @@
         <TextView
             android:id="@+id/dictData"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Please Wait till the data is fetch from website and Store into the local database.\n Thank you"
+            android:textColor="@android:color/black"/>
     </ScrollView>
 </LinearLayout>
